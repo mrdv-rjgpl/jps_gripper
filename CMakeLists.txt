@@ -107,7 +107,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES jps_gripper
-#  CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs
+  CATKIN_DEPENDS geometry_msgs roscpp rospy sensor_msgs std_msgs
 #  DEPENDS system_lib
 )
 
@@ -200,6 +200,5 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-
-add_executable(jps_gripper src/jps_gripper.cpp)
-target_link_libraries(jps_gripper ${catkin_LIBRARIES})
+add_executable(joy_servo src/joy_servo.cpp)
+target_link_libraries(joy_servo ${catkin_LIBRARIES})
