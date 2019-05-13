@@ -1,9 +1,9 @@
 <launch>
-	<!-- joy Node-->
+	<!-- joy node -->
 	<node pkg="joy" type="joy_node" name="joy_node_01" />
 
 	<!-- joy_servo node -->
-	<node pkg="joy_servo" type="joy_servo" name="joy_servo_node" output="screen" />
+	<node pkg="jps_gripper" type="joy_servo" name="joy_servo_node" output="screen" />
 
 	<!-- rosserial_node -->
 	<node name="serial_node" pkg="rosserial_python" type="serial_node.py">
