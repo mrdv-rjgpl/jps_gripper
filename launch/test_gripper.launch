@@ -6,5 +6,5 @@
 		<param name="baud" type="int"    value="57600"        />
 	</node>
 
-	<node pkg="jps_gripper" type="test_gripper" name="test_gripper_node" />
+	<node pkg="jps_gripper" type="test_gripper" name="test_gripper_node" output="screen" />
 </launch>
