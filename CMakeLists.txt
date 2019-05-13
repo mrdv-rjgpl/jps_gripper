@@ -202,3 +202,5 @@ include_directories(
 
 add_executable(joy_servo src/joy_servo.cpp)
 target_link_libraries(joy_servo ${catkin_LIBRARIES})
+add_executable(test_gripper src/test_gripper.cpp)
+target_link_libraries(test_gripper ${catkin_LIBRARIES})
